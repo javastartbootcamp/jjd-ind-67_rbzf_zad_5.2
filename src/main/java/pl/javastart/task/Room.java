@@ -14,8 +14,8 @@ public class Room {
     }
 
     String getInfo() {
-        String format = "powierzchnia pomieszczenia: %.2f m.kw., aktualna temperatura: %.1f\u00B0C, " +
-                "temperatura minimalna: %.1f\u00B0C, zamontowany klimatyzator: %b";
+        String format = "powierzchnia pomieszczenia: %.2f m.kw., aktualna temperatura: %.1f°C, " +
+                "temperatura minimalna: %.1f°C, zamontowany klimatyzator: %b";
         return format.formatted(surface, temperature, minTemperature, airCondition);
     }
 
@@ -25,11 +25,8 @@ public class Room {
             return true;
         }   else if ((temperature - 1) < minTemperature) {
             temperature = minTemperature;
-<<<<<<< HEAD
             return true;
-=======
-            return false;
->>>>>>> origin/solution
+
         }
         return false;
     }
