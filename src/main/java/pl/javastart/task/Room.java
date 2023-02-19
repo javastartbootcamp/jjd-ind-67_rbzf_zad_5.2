@@ -25,7 +25,7 @@ public class Room {
             return true;
         }   else if ((temperature - 1) < minTemperature) {
             temperature = minTemperature;
-            return false;
+            return true;
         }
         return false;
     }
